@@ -24,11 +24,11 @@ Such that they could have a directory of contact get people for their job.
 ## Swagger Demo
 ![alt text](img/swagger.png)
 ## GET Demo
-![alt text](img/test.png)
+![alt text](img/test.PNG)
 ## POST Demo
-![alt text](img/test2.png)
+![alt text](img/test2.PNG)
 ## PUT Demo
-![alt text](img/test3.png)
+![alt text](img/test3.PNG)
 ## DELETE Demo
-![alt text](img/test4.png)
+![alt text](img/test4.PNG)
 
