@@ -3,8 +3,13 @@ This is project using RESTful API.
  Expected Skillsets – ASP.Net Core Web API, Database, RESTful API,
  Client side development skill, Securing the endpoint, Caching Strategy, Pagination, Error
 Handling, Testing Strategy (e.g. CI/CD, design pattern, clean architecture)
-
-A fictional company, CDN - Complete Developer Network is going to build a list of freelancers.
+##### Table of Contents  
+[Overview](#overview)  
+[UI Demo](#ui)  
+...snip...    
+<a name="overview"/>
+## Overview
+Project for CDN - Complete Developer Network is going to build a list of freelancers.
 Such that they could have a directory of contact get people for their job.
 1. Develop the RESTful API to register/delete/update/get for an user using verbs such as:
  @GET, @POST @PUT, @DELETE
@@ -19,6 +24,7 @@ Such that they could have a directory of contact get people for their job.
  explain code how it works, what technology was used.
  demonstrate code, on how to query data, add data, update data & remove data.
  host the working demo AWS to demonstrate the project!
+<a name="ui"/>
 ## UI Demo
 ![alt text](img/ui.PNG)
 ## MYSQL Demo
