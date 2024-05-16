@@ -20,7 +20,7 @@ Such that they could have a directory of contact get people for their job.
  demonstrate code, on how to query data, add data, update data & remove data.
  host the working demo AWS to demonstrate the project!
 ## UI Demo
-![alt text](img/ui.png)
+![alt text](img/ui.PNG)
 ## MYSQL Demo
 ![alt text](img/database.png)
 ## Swagger Demo
