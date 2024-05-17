@@ -28,7 +28,7 @@ Project Requirement:
 
 
 ## UI Demo
-![alt text](img/ui.PNG)
+![alt text](img/ui.png)
 ## MYSQL Demo
 ![alt text](img/database.png)
 ## Swagger Demo
