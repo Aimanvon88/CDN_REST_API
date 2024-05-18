@@ -2,6 +2,7 @@
 This is project using RESTful API ASP.Net Core Web API with Database
 ## Table of Contents
 + Overview
++ + Description
 + UI
 + Database
 + API
@@ -24,21 +25,22 @@ Project Requirement:
 4. Build a simple interface for the above 4 operations:
  GET list of registered user name.
  Register a new user, delete a user, update a user details.
-
+### API Description
+![alt text](img/API_Desc.PNG)
 
 
 ## UI Demo
 ![alt text](img/ui.png)
 ## MYSQL Demo
 ![alt text](img/database.png)
-## Swagger Demo
-![alt text](img/swagger.png)
+## API Demo
+![alt text](img/api_test.PNG)
 ## GET Demo
-![alt text](img/test.PNG)
+![alt text](img/api_test_get.PNG)
 ## POST Demo
-![alt text](img/test2.PNG)
+![alt text](img/api_test_post.PNG)
 ## PUT Demo
-![alt text](img/test3.PNG)
+![alt text](img/api_test_put.PNG)
 ## DELETE Demo
-![alt text](img/test4.PNG)
+![alt text](img/api_test_del.PNG)
 
