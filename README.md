@@ -2,7 +2,6 @@
 This is project using RESTful API ASP.Net Core Web API with Database
 ## Table of Contents
 + Overview
-+ + Description
 + UI
 + Database
 + API
@@ -14,9 +13,9 @@ This is project using RESTful API ASP.Net Core Web API with Database
 ## Overview
 A project for CDN - Complete Developer Network that going to build a list of freelancers.
 Such that they could have a directory of contact to get people for their job.
-The Design:
+### The Design:
 ![alt text](img/overview.PNG)
-Project Requirement:
+### Project Requirement:
 1. Develop the RESTful API to register/delete/update/get for an user using verbs such as:
  @GET, @POST @PUT, @DELETE
 2. Attributes for user model:
