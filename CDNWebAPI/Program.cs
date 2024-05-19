@@ -33,11 +33,10 @@ if (app.Environment.IsDevelopment())
 
 var cdnuserItems = app.MapGroup("/cdnusers");
 
-cdnuserItems.MapGet("/", GetAllUser);
-cdnuserItems.MapGet("/{id}", GetUser); 
-cdnuserItems.MapPost("/", CreateUser);
-cdnuserItems.MapPut("/{id}", UpdateUser);
-cdnuserItems.MapDelete("/{id}", DeleteUser);
+cdnuserItems.MapGet("/GetAllUser", GetAllUser);
+cdnuserItems.MapPost("/CreateUser", CreateUser);
+cdnuserItems.MapPut("/UpdateUserById/{id}", UpdateUser);
+cdnuserItems.MapDelete("/DeleteUserById{id}", DeleteUser);
 
 app.UseDefaultFiles();
 app.UseStaticFiles();
@@ -47,14 +46,6 @@ static async Task<IResult> GetAllUser(CDNUserDb db)
  { 
     return TypedResults.Ok(await db.CDNUsers.Select(x => new CDNUserDTO(x)).ToArrayAsync());
  }   
-
-static async Task<IResult> GetUser(int id, CDNUserDb db) 
- {   
-    return await db.CDNUsers.FindAsync(id)
-        is CDNUser cdnuser
-            ? TypedResults.Ok(new CDNUserDTO(cdnuser))
-            : TypedResults.NotFound();
- }
 
 static async Task<IResult> CreateUser(CDNUserDTO cdnuserDTO, CDNUserDb db)
 {
