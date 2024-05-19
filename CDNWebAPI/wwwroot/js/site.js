@@ -1,8 +1,8 @@
-const uri = 'cdnusers';
+const uri = 'CDNWebAPI';
 let todos = [];
 
 function getItems() {
-  fetch(uri)
+  fetch("CDNWebAPI/GetAllUser")
     .then(response => response.json())
     .then(data => _displayItems(data))
     .catch(error => console.error('Unable to get items.', error));
@@ -23,7 +23,7 @@ function addItem() {
     hobby: addHobbyTextbox.value.trim()
   };
 
-  fetch(uri, {
+  fetch("CDNWebAPI/CreateUser", {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
@@ -44,7 +44,7 @@ function addItem() {
 }
 
 function deleteItem(id) {
-  fetch(`${uri}/${id}`, {
+  fetch("CDNWebAPI/DeleteUserById/"+`${id}`, {
     method: 'DELETE'
   })
   .then(() => getItems())
@@ -75,7 +75,7 @@ function updateItem() {
     hobby: document.getElementById('edit-hobby').value.trim()
   };
 
-  fetch(`${uri}/${itemId}`, {
+  fetch("CDNWebAPI/UpdateUserById/"+`${itemId}`, {
     method: 'PUT',
     headers: {
       'Accept': 'application/json',
